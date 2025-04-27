@@ -1,0 +1,4 @@
+body {
+  padding: var(--space-base);
+  font-family: var(--font-sans);
+}
