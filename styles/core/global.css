@@ -1,4 +1,57 @@
 body {
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  font-weight: var(--light);
+}
+
+/* layout utility classes */
+.container > * {
   padding: var(--space-base);
+}
+
+.section-layout {
+  display: grid;
+  gap: var(--layout-gap);
+  grid-template-columns: repeat(var(--layout-columns), minmax(0, 1fr));
+}
+
+.element-layout {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: inherit;
+  gap: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+/* screen readers */
+.sr-only {
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+}
+
+/* font utility classes */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: var(--semi-bold);
+}
+
+/* typography utility classes */
+.inter {
   font-family: var(--font-sans);
+}
+
+.merri-italic {
+  font-family: var(--font-serif-italic);
 }

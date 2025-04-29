@@ -1,0 +1,28 @@
+.intro {
+  text-wrap: balance;
+  color: var(--light-color);
+  background-color: var(--dark-color);
+  width: 100%;
+  min-height: 100vh;
+}
+
+.intro_text {
+  flex-direction: column;
+  gap: var(--space-xs);
+  grid-column: var(--intro-main-text-span);
+  font-size: var(--text-2xl);
+}
+
+.intro_action {
+  align-self: flex-end;
+
+  .text_action {
+    font-size: var(--text-base);
+    grid-column: var(--intro-action-text-column);
+  }
+
+  .button_action {
+    justify-self: flex-end;
+    align-self: flex-end;
+  }
+}

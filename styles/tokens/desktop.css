@@ -1,4 +1,10 @@
 :root {
   --layout-columns: 8;
   --layout-gap: 1rem;
+
+  --text-base: 1.25rem;
+  --text-2xl: 2.3rem;
+
+  --intro-main-text-span: span 5;
+  --intro-action-text-column: 6 / span 2;
 }
