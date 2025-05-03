@@ -5,11 +5,8 @@ body {
 }
 
 /* layout utility classes */
-.container > * {
-  padding: var(--space-base);
-}
-
 .section-layout {
+  padding: var(--space-base);
   display: grid;
   gap: var(--layout-gap);
   grid-template-columns: repeat(var(--layout-columns), minmax(0, 1fr));
@@ -24,6 +21,11 @@ body {
 
 .flex {
   display: flex;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
 }
 
 /* screen readers */

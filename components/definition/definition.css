@@ -1,0 +1,32 @@
+.definition {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  height: 100vh;
+  align-items: flex-end;
+}
+
+.definition_content {
+  display: flex;
+  flex-direction: column;
+  grid-column: var(--definition-content-column);
+  gap: var(--space-xs);
+}
+
+.definition_title {
+  font-size: var(--text-3xl);
+}
+
+.definition_subtitle {
+  text-indent: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.definition_list {
+  padding-left: 1.5rem;
+  font-size: var(--text-lg);
+  margin-top: var(--space-sm);
+
+  > li {
+    list-style: decimal;
+  }
+}
