@@ -4,6 +4,9 @@
   background-color: var(--dark-color);
   width: 100%;
   min-height: 100vh;
+  position: fixed;
+  overflow-y: hidden;
+  z-index: 1;
 }
 
 .intro_text {
