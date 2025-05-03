@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="styles/tokens/commons.css">
   <link rel="icon" href="/assets/favicon/favicon.ico">
   <script src="js/utils/loadTokens.js" defer></script>
+  <script src="assets/gsap/ScrollTrigger.min.js"></script>
+  <script src="assets/gsap/ScrollSmoother.min.js"></script>
   <script src="assets/gsap/gsap.min.js" defer></script>
 </head>
 
@@ -45,9 +47,25 @@
         </button>
       </div>
     </article>
-    <article class="hero section-layout">
-      <h1 class="hero_title">La web que <span class="hero_subtitle"></span></h1>
-    </article>
+    <div id="smooth-content">
+      <article class="hero section-layout">
+        <h1 class="hero_title">La web que <span class="hero_subtitle"></span></h1>
+      </article>
+      <article class="definition section-layout">
+        <div class="definition_content element-layout">
+          <h2 class="definition_title inter uppercase semi-bold">clickbait</h2>
+          <p class="definition_subtitle">Del inglés <span class="merri-italic">/'klik-ˌbeit/</span></p>
+          <ol class="definition_list">
+            <li>Traducido al español como ciberanzuelo, cibercebo, cebo de clics o anzuelo de clics, es un neologismo
+              en
+              inglés usado de forma peyorativa para describir a los contenidos en internet que apuntan a generar
+              ingresos
+              publicitarios usando titulares y miniaturas de maneras sensacionalistas y
+              engañosas para atraer la mayor proporción de clics posibles.</li>
+          </ol>
+        </div>
+      </article>
+    </div>
   </main>
 
   <script type="module" src="js/main.js"></script>
