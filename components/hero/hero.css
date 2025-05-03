@@ -1,0 +1,26 @@
+.hero {
+  height: 100vh;
+  align-items: flex-end;
+}
+
+.hero_title {
+  display: flex;
+  flex-direction: column;
+  grid-column: var(--grid-column-span-full);
+  font-weight: var(--light);
+  font-size: clamp(
+    var(--hero-title-font-size-min),
+    var(--hero-title-font-size-preferred),
+    var(--hero-title-font-size-max)
+  );
+}
+
+.hero_subtitle {
+  font-family: var(--font-serif-italic);
+  font-weight: var(--semi-bold);
+  font-size: clamp(
+    var(--hero-subtitle-font-size-min),
+    var(--hero-subtitle-font-size-preferred),
+    var(--hero-subtitle-font-size-max)
+  );
+}

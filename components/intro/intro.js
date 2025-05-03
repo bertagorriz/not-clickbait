@@ -1,3 +1,5 @@
+import { animateSubtitle } from "../hero/hero.js";
+
 const intro = document.querySelector(".intro");
 const button = intro.querySelector("button");
 
@@ -17,6 +19,7 @@ const animateIntro = () => {
     onComplete: () => {
       intro.style.display = "none";
       enableScroll();
+      animateSubtitle();
     },
   });
 };
