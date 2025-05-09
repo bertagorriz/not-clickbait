@@ -2,17 +2,21 @@
   --light-color: #fff;
   --dark-color: #000;
 
+  --box-shadow-light: -8px -8px 16px 0 rgba(0, 0, 0, 0.15);
+
   --font-sans: "Inter", sans-serif;
   --font-serif: "Merriweather", serif;
   --font-serif-italic: "Merriweather Italic", serif;
 
   --light: 300;
   --semi-bold: 600;
+  --bold: 800;
 
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-base: 1rem;
   --space-lg: 1.5rem;
+  --space-xl: 2rem;
 
   --grid-column-span-full: 1 / -1;
 
@@ -20,7 +24,14 @@
   --large-clamp-font-size-preferred: 4.5vw;
   --large-clamp-font-size-max: 4.375rem;
 
+  --extra-large-clamp-font-size-min: 8rem;
+  --extra-large-clamp-font-size-preferred: 20vw;
+  --extra-large-clamp-font-size-max: 10rem;
+
   --hero-subtitle-font-size-min: 3.5rem;
   --hero-subtitle-font-size-preferred: 7vw;
   --hero-subtitle-font-size-max: 7.5rem;
+
+  --history-item-height: 200px;
+  --history-item-width: 800px;
 }
