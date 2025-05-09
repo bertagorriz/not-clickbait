@@ -28,7 +28,7 @@ const getTokensLink = (currentSize) => {
   return link;
 };
 
-const getDynamicTokens = () => {
+export const getDynamicTokens = () => {
   let currentSize = getWindowSize();
   let tokensLink = getTokensLink(currentSize);
 
@@ -40,5 +40,3 @@ const getDynamicTokens = () => {
     }
   });
 };
-
-getDynamicTokens();

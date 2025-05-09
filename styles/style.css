@@ -1,3 +1,4 @@
+@import url("tokens/commons.css");
 @import url("core/reset.css");
 @import url("core/typography.css");
 @import url("core/global.css");
@@ -7,3 +8,4 @@
 @import url("../components/definition/definition.css");
 @import url("../components/history/history.css");
 @import url("../components/counter/counter.css");
+@import url("../components/features/features.css");
