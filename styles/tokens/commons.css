@@ -19,6 +19,7 @@
   --space-xl: 2rem;
 
   --grid-column-span-full: 1 / -1;
+  --grid-row-two: 2;
 
   --large-clamp-font-size-min: 2rem;
   --large-clamp-font-size-preferred: 4.5vw;
@@ -27,6 +28,10 @@
   --extra-large-clamp-font-size-min: 8rem;
   --extra-large-clamp-font-size-preferred: 20vw;
   --extra-large-clamp-font-size-max: 10rem;
+
+  --full-large-clamp-font-size-min: 3rem;
+  --full-large-clamp-font-size-preferred: 17vw;
+  --full-large-clamp-font-size-max: 17.5rem;
 
   --hero-subtitle-font-size-min: 3.5rem;
   --hero-subtitle-font-size-preferred: 7vw;

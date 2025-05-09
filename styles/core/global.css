@@ -70,6 +70,10 @@ body {
   font-family: var(--font-sans);
 }
 
+.merri {
+  font-family: var(--font-serif);
+}
+
 .merri-italic {
   font-family: var(--font-serif-italic);
 }

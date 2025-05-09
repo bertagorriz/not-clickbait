@@ -14,4 +14,9 @@
 
   --history-content-column: span 3;
   --history-content-column-last: 6 / span 3;
+
+  --counter-text-span: span 4;
+  --counter-text-column-last: 5 / span 4;
+
+  --percentage-text-span: span 4;
 }
