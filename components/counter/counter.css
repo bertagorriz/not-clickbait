@@ -1,0 +1,56 @@
+.counter {
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.counter_content {
+  grid-column: var(--grid-column-span-full);
+}
+
+.counter_number {
+  font-size: clamp(
+    var(--full-large-clamp-font-size-min),
+    var(--full-large-clamp-font-size-preferred),
+    var(--full-large-clamp-font-size-max)
+  );
+
+  > span {
+    text-align: center;
+  }
+}
+
+.counter_text > p {
+  grid-column: var(--counter-text-span);
+}
+
+.counter_paragraph {
+  grid-row: var(--grid-row-two);
+  grid-column: var(--counter-text-column-last);
+}
+
+.counter_percentage {
+  display: inline-block;
+  transform-origin: center;
+}
+
+.fade_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  background-color: var(--dark-color);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.fade_text {
+  grid-column: var(--percentage-text-span);
+  color: var(--light-color);
+  opacity: 0;
+}
