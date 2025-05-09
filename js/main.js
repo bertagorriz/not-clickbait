@@ -1,11 +1,11 @@
-import { initScrollSmoother } from "./utils/scrollSmoother.js";
+import { getScrollSmoother } from "./utils/getScrollSmoother.js";
 
 import "../components/intro/intro.js";
 import "../components/hero/hero.js";
 import "../components/definition/definition.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  initScrollSmoother();
+  getScrollSmoother();
   console.log("Content initialized");
 });
 

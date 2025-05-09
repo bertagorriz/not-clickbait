@@ -12,12 +12,13 @@
   --space-xs: 0.25rem;
   --space-sm: 0.5rem;
   --space-base: 1rem;
+  --space-lg: 1.5rem;
 
   --grid-column-span-full: 1 / -1;
 
-  --hero-title-font-size-min: 2rem;
-  --hero-title-font-size-preferred: 4.5vw;
-  --hero-title-font-size-max: 4.375rem;
+  --large-clamp-font-size-min: 2rem;
+  --large-clamp-font-size-preferred: 4.5vw;
+  --large-clamp-font-size-max: 4.375rem;
 
   --hero-subtitle-font-size-min: 3.5rem;
   --hero-subtitle-font-size-preferred: 7vw;
