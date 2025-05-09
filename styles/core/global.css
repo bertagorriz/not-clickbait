@@ -49,6 +49,18 @@ body {
   font-weight: var(--semi-bold);
 }
 
+.light {
+  font-weight: var(--light);
+}
+
+.font-lg-clamp {
+  font-size: clamp(
+    var(--large-clamp-font-size-min),
+    var(--large-clamp-font-size-preferred),
+    var(--large-clamp-font-size-max)
+  );
+}
+
 /* typography utility classes */
 .inter {
   font-family: var(--font-sans);

@@ -22,7 +22,7 @@
 }
 
 .definition_list {
-  padding-left: 1.5rem;
+  padding-left: var(--space-lg);
   font-size: var(--text-lg);
   margin-top: var(--space-sm);
 

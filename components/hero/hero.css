@@ -7,12 +7,6 @@
   display: flex;
   flex-direction: column;
   grid-column: var(--grid-column-span-full);
-  font-weight: var(--light);
-  font-size: clamp(
-    var(--hero-title-font-size-min),
-    var(--hero-title-font-size-preferred),
-    var(--hero-title-font-size-max)
-  );
 }
 
 .hero_subtitle {
