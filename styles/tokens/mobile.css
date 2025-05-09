@@ -11,4 +11,7 @@
   --intro-action-text-column: 1;
 
   --definition-content-column: 1 / -1;
+
+  --history-content-column: 1 / -1;
+  --history-content-column-last: 1 / -1;
 }

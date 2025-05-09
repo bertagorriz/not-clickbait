@@ -53,6 +53,10 @@ body {
   font-weight: var(--light);
 }
 
+.bold {
+  font-weight: var(--bold);
+}
+
 .font-lg-clamp {
   font-size: clamp(
     var(--large-clamp-font-size-min),
