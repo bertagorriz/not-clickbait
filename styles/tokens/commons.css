@@ -17,8 +17,11 @@
   --space-base: 1rem;
   --space-lg: 1.5rem;
   --space-xl: 2rem;
+  --space-2xl: 2.5rem;
+  --space-3xl: 3rem;
 
   --grid-column-span-full: 1 / -1;
+  --grid-column-start-two: 2;
   --grid-row-two: 2;
 
   --large-clamp-font-size-min: 2rem;

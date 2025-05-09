@@ -19,4 +19,6 @@
   --counter-text-column-last: 3 / span 2;
 
   --percentage-text-span: span 2;
+
+  --features-text-span: span 2;
 }

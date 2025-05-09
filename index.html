@@ -8,10 +8,17 @@
   <meta name="description"
     content="Una web interactiva que cuestiona los mecanismos digitales que compiten por nuestra atención.">
   <title>not clickbait</title>
+
+  <link rel="preload" href="/assets/fonts/Inter-VariableFont_opsz,wght.ttf" as="font" type="font/ttf"
+    crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Merriweather-VariableFont_opsz,wdth,wght.ttf" as="font" type="font/ttf"
+    crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/Merriweather-Italic-VariableFont_opsz,wdth,wght.ttf" as="font" type="font/ttf"
+    crossorigin="anonymous">
+
   <link rel="stylesheet" href="styles/style.css">
-  <link rel="stylesheet" href="styles/tokens/commons.css">
   <link rel="icon" href="/assets/favicon/favicon.ico">
-  <script src="js/utils/getDynamicTokens.js" defer></script>
+
   <script src="assets/gsap/ScrollTrigger.min.js"></script>
   <script src="assets/gsap/ScrollSmoother.min.js"></script>
   <script src="assets/gsap/gsap.min.js" defer></script>
@@ -119,6 +126,53 @@
             <span>el </span>
             <span class="counter_percentage merri semi-bold">80%</span>
             <span> de lo que consumes en internet,<br>es clickbait</span>
+          </div>
+        </div>
+      </article>
+      <article class="features section-layout">
+        <div class="element-layout">
+          <h2 class="features_title font-lg-clamp inter light">Hay patrones que se repiten.</h2>
+        </div>
+        <div class="features-horizontal flex">
+          <div class="feature-point">
+            <h3>Titulares sensacionalistas o exagerados</h3>
+            <p>Usan frases como «No creerás lo que...», «El mejor truco de la historia», o «¡Sorpresa total!» para
+              captar la atención apelando a la curiosidad o emociones
+              fuertes</p>
+          </div>
+          <div class="feature-point">
+            <h3>Promesas demasiado buenas para ser ciertas</h3>
+            <p>Titulares que sugieren que el contenido cambiará tu vida o revelará secretos exclusivos, pero que no
+              cumplen esas
+              expectativas</p>
+          </div>
+          <div class="feature-point">
+            <h3>Títulos que omiten información clave (cliffhangers)</h3>
+            <p>Usan frases como "No vas a creer lo que pasó después" o "Este truco te sorprenderá", obligando al
+              usuario
+              a hacer clic para obtener la información completa.</p>
+          </div>
+          <div class="feature-point">
+            <h3>Aprovechan temas emocionales o polémicos</h3>
+            <p>Explotan la indignación, la tristeza o el asombro con titulares que apelan a las emociones más intensas
+              para impulsar clics.</p>
+          </div>
+          <div class="feature-point">
+            <h3>Imágenes engañosas o fuera de contexto</h3>
+            <p>Muestran miniaturas llamativas, provocativas o falsas que no tienen relación directa con el contenido
+              real.</p>
+          </div>
+          <div class="feature-point">
+            <h3>Listas numeradas o fórmulas llamativas</h3>
+            <p>"10 formas de...", "Esto es lo que pasa cuando...", porque generan curiosidad y sugieren
+              información
+              concreta y fácil de consumir.</p>
+          </div>
+          <div class="feature-point">
+            <h3>Urgencia falsa o lenguaje alarmista</h3>
+            <p>Utilizan expresiones como "¡Última hora!" o "Tienes que verlo antes de que lo borren", para generar
+              miedo
+              a perderse algo importante.</p>
           </div>
         </div>
       </article>
