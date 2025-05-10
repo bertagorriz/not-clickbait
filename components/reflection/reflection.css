@@ -1,0 +1,12 @@
+.reflection {
+  padding-top: var(--section-space-lg);
+  padding-bottom: var(--section-space-sm);
+  text-wrap: balance;
+}
+
+.reflection_text {
+  flex-direction: column;
+  gap: var(--space-base);
+  grid-column: var(--action-title-column);
+  font-size: var(--text-2xl);
+}
