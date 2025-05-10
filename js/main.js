@@ -7,6 +7,7 @@ import "../components/definition/definition.js";
 import "../components/history/history.js";
 import "../components/counter/counter.js";
 import "../components/features/features.js";
+import "../components/actions/actions.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   getScrollSmoother();

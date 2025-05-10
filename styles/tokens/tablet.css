@@ -22,4 +22,7 @@
 
   --features-text-span: span 2;
   --features-point-width: 50vw;
+
+  --action-title-column: 3 / span 2;
+  --action-points-container-column: span 2;
 }
