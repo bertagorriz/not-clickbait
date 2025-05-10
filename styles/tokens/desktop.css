@@ -25,4 +25,6 @@
 
   --action-title-column: 5 / span 5;
   --action-points-container-column: span 4;
+
+  --reflection-text-column: 5 / span 4;
 }

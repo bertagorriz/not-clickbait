@@ -2,7 +2,7 @@
   background: var(--dark-color);
   color: var(--light-color);
   min-height: 100vh;
-  padding-bottom: var(--section-space);
+  padding-bottom: var(--section-space-lg);
   row-gap: var(--space-xl);
 }
 

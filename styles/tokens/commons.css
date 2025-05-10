@@ -25,7 +25,8 @@
   --grid-column-start-two: 2;
   --grid-row-two: 2;
 
-  --section-space: 200px;
+  --section-space-sm: 100px;
+  --section-space-lg: 200px;
 
   --large-clamp-font-size-min: 2rem;
   --large-clamp-font-size-preferred: 4.5vw;
