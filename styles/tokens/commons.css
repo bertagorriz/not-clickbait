@@ -19,6 +19,7 @@
   --space-xl: 2rem;
   --space-2xl: 2.5rem;
   --space-3xl: 3rem;
+  --space-4xl: 4rem;
 
   --grid-column-span-full: 1 / -1;
   --grid-column-start-two: 2;
@@ -42,4 +43,7 @@
 
   --history-item-height: 200px;
   --history-item-width: 800px;
+
+  --feature-horizontal-line-height: 4px;
+  --feature-point-size: 20px;
 }
