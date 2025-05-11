@@ -6,7 +6,7 @@ const content = contentContainer.querySelectorAll("*");
 gsap.from(content, {
   opacity: 0,
   y: 40,
-  duration: 0.6,
+  duration: 1,
   stagger: 0.2,
   ease: "power2.out",
   scrollTrigger: {

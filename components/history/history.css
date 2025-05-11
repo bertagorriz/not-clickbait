@@ -1,4 +1,5 @@
 .history {
+  padding-block: var(--section-space-sm);
   overflow: hidden;
   background: var(--dark-color);
   color: var(--light-color);
