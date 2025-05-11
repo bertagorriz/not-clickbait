@@ -3,6 +3,7 @@ import debounce from "../../js/utils/debounce.js";
 gsap.registerPlugin(ScrollTrigger);
 
 const historyArticle = document.querySelector(".history");
+const historyTitles = document.querySelectorAll(".history_content");
 const itemsWrapper = document.querySelector(".history_clickbaits");
 const items = document.querySelectorAll(".history_item");
 const totalItems = items.length - 1;
@@ -58,12 +59,32 @@ const animateItems = () => {
       ease: "power1.out",
       duration: 1,
       stagger: 0.5,
+      delay: 0.2,
       scrollTrigger: {
         trigger: item,
         start: "top 80%",
         toggleActions: "play none none reverse",
       },
     });
+  });
+};
+
+const animateTitles = () => {
+  historyTitles.forEach((title) => {
+    gsap.fromTo(
+      title,
+      { opacity: 0 },
+      {
+        opacity: 1,
+        duration: 1,
+        ease: "power1.inOut",
+        scrollTrigger: {
+          trigger: title,
+          start: "bottom bottom",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
   });
 };
 
@@ -75,6 +96,7 @@ const refreshHistoryWrapper = () => {
 };
 
 const initHistorySection = () => {
+  animateTitles();
   positionItems();
   animateWrapper();
   ScrollTrigger.refresh();

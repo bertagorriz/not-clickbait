@@ -1,4 +1,5 @@
 .definition {
+  padding-bottom: var(--section-space-sm);
   background-color: var(--dark-color);
   color: var(--light-color);
   height: 100vh;

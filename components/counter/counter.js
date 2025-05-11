@@ -7,7 +7,7 @@ const counterNumbers = counterContent.querySelectorAll("span");
 const counterPercentage = counter.querySelector(".counter_percentage");
 
 const fadeBox = counter.querySelector(".fade_box");
-const fadePercentage = fadeBox.querySelector(".fade_text");
+const fadeText = fadeBox.querySelector(".fade_text");
 
 const otherSpans = counter.querySelectorAll(
   ".counter_paragraph span:not(.counter_percentage), .counter_text p, .counter_number"
@@ -34,21 +34,25 @@ const startIncrement = () => {
   });
 };
 
-const animateCounter = gsap.to(percent, {
-  value: targetValue,
-  duration: 4,
-  ease: "power2.out",
-  onUpdate: updateTextContent,
-  onComplete: () => {
-    setInterval(startIncrement, 1500);
-  },
-  scrollTrigger: {
-    trigger: counterContent,
-    start: "top 80%",
-    once: true,
-    onEnter: () => animateCounter.play(),
-  },
-});
+const animateCounter = () => {
+  gsap.to(percent, {
+    value: targetValue,
+    duration: 4,
+    ease: "power2.out",
+    onUpdate: updateTextContent,
+    onStart: () => {
+      gsap.to(counterNumbers, { opacity: 1, duration: 0.3 });
+    },
+    onComplete: () => {
+      setInterval(startIncrement, 1500);
+    },
+    scrollTrigger: {
+      trigger: counterContent,
+      start: "bottom bottom",
+      once: true,
+    },
+  });
+};
 
 const percentageTimeline = gsap.timeline({
   scrollTrigger: {
@@ -63,14 +67,15 @@ const percentageTimeline = gsap.timeline({
 percentageTimeline
   .to(counterPercentage, {
     scale: 500,
-    duration: 1,
+    duration: 1.5,
     ease: "power1.inOut",
+    delay: 1,
   })
   .to(
     otherSpans,
     {
       opacity: 0,
-      duration: 0.3,
+      duration: 1,
       ease: "power1.inOut",
     },
     "<"
@@ -86,14 +91,16 @@ percentageTimeline
     "-=1"
   )
   .to(
-    fadePercentage,
+    fadeText,
     { opacity: 1, scale: 1, duration: 0.5, ease: "power2.inOut" },
     "-=0.5"
-  );
+  )
+  .to({}, { duration: 2 });
 
 window.addEventListener(
   "load",
   debounce(() => {
     ScrollTrigger.refresh();
+    animateCounter();
   }, 300)
 );

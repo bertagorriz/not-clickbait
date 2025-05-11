@@ -18,14 +18,29 @@
 
 .intro_action {
   align-self: flex-end;
+}
 
-  .text_action {
-    font-size: var(--text-base);
-    grid-column: var(--intro-action-text-column);
+.text_action {
+  font-size: var(--text-base);
+  grid-column: var(--intro-action-text-column);
+}
+
+.button_action {
+  justify-self: flex-end;
+  align-self: flex-end;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.button_action:hover {
+  animation-play-state: paused;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
   }
-
-  .button_action {
-    justify-self: flex-end;
-    align-self: flex-end;
+  50% {
+    transform: scale(1.1);
   }
 }
